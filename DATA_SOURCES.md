@@ -23,7 +23,7 @@ Every asset and record ingested into the system is explicitly tagged with a `dat
 ## 2. Source Registry & Research Citations
 
 Full machine-readable registry is stored at:  
-[`backend/data/sources/source_registry.json`](file:///C:/Users/Avinash/OneDrive/Desktop/OM/messy-evidence-decisions/backend/data/sources/source_registry.json)
+[`backend/data/sources/source_registry.json`](backend/data/sources/source_registry.json)
 
 ### Source 1: Road Damage Dataset 2020 (RDD2020)
 * **Publisher:** Sekilab, Institute of Industrial Science, The University of Tokyo (Arya et al., IEEE BigData 2020 / Mendeley Data)
