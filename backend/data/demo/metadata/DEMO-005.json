@@ -1,0 +1,50 @@
+{
+  "case_id": "DEMO-005",
+  "title": "Road Repair Verification \u2014 Gate 2 vs Gate 5 Spatial Audit",
+  "category": "Road / Infrastructure",
+  "location": "Gate 2 Road, North Sector",
+  "reporter": "Municipal Integrity Audit Unit",
+  "summary": "Official completion order WO-8812 (Gate 2 Road) submitted alongside citizen damage evidence from Gate 5 Road (Location Mismatch / Spatial Discrepancy).",
+  "data_origin": "derived",
+  "expected": {
+    "decision": "INSUFFICIENT EVIDENCE",
+    "severity": "LOW",
+    "recommended_action": "Verify location metadata and submit geo-tagged evidence for matching site",
+    "relationship_type": "UNSUPPORTED"
+  },
+  "evidence_items": [
+    {
+      "id": "EV-D5-001-PDF",
+      "source_type": "PDF",
+      "filename": "WO_2026_8812_Gate2_Completion.pdf",
+      "file_path": "data/demo/official_records/WO_2026_8812_Gate2_Completion.pdf",
+      "sha256": "b56a74035450584abca142877859ece533fd0f906eb75b3c6e97e098880fba84",
+      "location": "Gate 2 Road, North Sector",
+      "uploader": "Public Works Dept Portal",
+      "data_origin": "derived",
+      "description": "Completion order for Gate 2 Road."
+    },
+    {
+      "id": "EV-D5-002-PHOTO",
+      "source_type": "IMAGE",
+      "filename": "gate5_road_damage.jpg",
+      "file_path": "data/demo/images/gate5_road_damage.jpg",
+      "sha256": "300c23a6506736ed2363432c331a74ba405a93c8a6ed03dcf09b08ddc3b2db7f",
+      "location": "Gate 5 Road, South Sector",
+      "uploader": "Citizen Mobile App",
+      "data_origin": "derived",
+      "description": "Photo of pothole on Gate 5 Road."
+    },
+    {
+      "id": "EV-D5-003-TEXT",
+      "source_type": "TEXT",
+      "filename": "gate5_resident_complaint.txt",
+      "file_path": "data/demo/complaints/gate5_resident_complaint.txt",
+      "sha256": "2106fbaaa9c070895c944fbf7f325a50a6c9e5a0695fde06e651960f78430c70",
+      "location": "Gate 5 Road, South Sector",
+      "uploader": "Ward Helpdesk",
+      "data_origin": "derived",
+      "description": "Complaint ticket specifically for Gate 5 Road."
+    }
+  ]
+}

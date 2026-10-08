@@ -1,0 +1,536 @@
+{
+  "case": {
+    "id": "CASE-GATE2-DEMO",
+    "title": "Road Repair Verification \u2014 Gate 2",
+    "category": "Road / Infrastructure",
+    "location": "Gate 2 Road, North Sector",
+    "reporter": "Citizen Grievance Cell & Ward Auditor",
+    "status": "REVIEWED",
+    "created_at": "2026-10-07T19:45:50.443406",
+    "updated_at": "2026-10-07T19:46:00.753222",
+    "evidence_count": 4
+  },
+  "evidence": [
+    {
+      "id": "EV-001-PHOTO",
+      "case_id": "CASE-GATE2-DEMO",
+      "source_type": "IMAGE",
+      "file_name": "gate2_current_road_condition.jpg",
+      "file_hash": "cdb9edb1e2a2fab192997d7f8f42a7a4c3ed1534a0f3f6b96e903cb8803c6694",
+      "timestamp": "2026-10-07T19:45:50.453993",
+      "location": "Gate 2 Road, North Sector",
+      "uploader": "Citizen Mobile App",
+      "processing_status": "EXTRACTED",
+      "raw_text": "MUNICIPAL CORRIDOR: GATE 2 - NORTH SECTOR\nSURFACE CONDITION EVIDENCE CAPTURE\n[SEVERE POTHOLE CAVITY: 45cm DEPTH]"
+    },
+    {
+      "id": "EV-002-PDF",
+      "case_id": "CASE-GATE2-DEMO",
+      "source_type": "PDF",
+      "file_name": "municipal_completion_order_WO8812.pdf",
+      "file_hash": "32bf85007c194311dd6fac33de9c7cbbf1de5eecefc79723f5d0693bb28172aa",
+      "timestamp": "2026-10-07T19:45:50.453993",
+      "location": "Gate 2 Road, North Sector",
+      "uploader": "Public Works Dept Portal",
+      "processing_status": "EXTRACTED",
+      "raw_text": "MUNICIPAL CORPORATION OF NORTH DISTRICT\nPublic Works Department - Road Maintenance & Repair Cell\nOfficial Civil Work Completion & Inspection Order\nReport ID: WO-2026-8812\nDate: October 01, 2026\nLocation: Gate 2 Road, North Sector Ring Road\nInspection Status: Inspected and Certified\nContractor: Metro Highway Infrastructure Ltd.\nSupervisor ID: ENG-5529\nOFFICIAL REPAIR COMPLETION STATEMENT:\nThis official certificate confirms that road repair work order WO-2026-8812 has been\nfully executed. The road damage and potholes located at Gate 2 Road, North Sector have been\nsuccessfully repaired, asphalt resurfaced and sealed. Status: COMPLETED.\nThe surface was inspected and certified by the civil maintenance engineer on October 01, 2026\nas meeting municipal traffic and transit durability guidelines.\nSTATUS: WORK COMPLETED\nSigned: Er. P. K. Verma, Executive Engineer\nMunicipal Road Works Div, 2026-10-01"
+    },
+    {
+      "id": "EV-003-VOICE",
+      "case_id": "CASE-GATE2-DEMO",
+      "source_type": "AUDIO",
+      "file_name": "citizen_ivr_voice_recording.wav",
+      "file_hash": "cec435009dd9fcfb9ddc2a12c57137e0126f05f544b81118877d5d24f1f098bf",
+      "timestamp": "2026-10-07T19:45:50.453993",
+      "location": "Gate 2 Road",
+      "uploader": "Municipal Helpline 1916",
+      "processing_status": "EXTRACTED",
+      "raw_text": "Gate 2 road is still damaged. The huge pothole has been there for over two months even after the municipal department claimed repair was completed. Cars are getting their tires ruined."
+    },
+    {
+      "id": "EV-004-TEXT",
+      "case_id": "CASE-GATE2-DEMO",
+      "source_type": "TEXT",
+      "file_name": "ward_grievance_note_9921.txt",
+      "file_hash": "86e55672b19c2894c434ded5aea81f5f92cf4af513182e4cb9bc95a074a61874",
+      "timestamp": "2026-10-07T19:45:50.453993",
+      "location": "Gate 2 Road near North Sector roundabout",
+      "uploader": "Ward Supervisor Log",
+      "processing_status": "EXTRACTED",
+      "raw_text": "Citizen Grievance #CG-9921\nDate: 2026-10-06\nLocation: Gate 2 Road near North Sector roundabout\nComplaint: The road remains heavily damaged. Deep pothole causing major traffic slowdown and bike accidents. Department claimed repair completed last week but no repair work was ever done. Please send physical inspection team immediately."
+    }
+  ],
+  "extractions": [
+    {
+      "id": "EXT-072FB488",
+      "evidence_id": "EV-001-PHOTO",
+      "field": "damage_present",
+      "value": "true",
+      "confidence": 0.96,
+      "created_at": "2026-10-07T19:45:55.864696"
+    },
+    {
+      "id": "EXT-A2E6BD1D",
+      "evidence_id": "EV-001-PHOTO",
+      "field": "visual_severity",
+      "value": "HIGH",
+      "confidence": 0.96,
+      "created_at": "2026-10-07T19:45:55.864696"
+    },
+    {
+      "id": "EXT-0BF57653",
+      "evidence_id": "EV-001-PHOTO",
+      "field": "observations_json",
+      "value": "[{\"type\": \"surface_roughness_variance\", \"value\": 2533.3, \"confidence\": 0.95, \"status\": \"OBSERVED\", \"details\": \"Laplacian variance computed as 2533.3\"}, {\"type\": \"cavity_area_ratio\", \"value\": 0.1143, \"confidence\": 0.92, \"status\": \"OBSERVED\", \"details\": \"1 distinct low-luminance cavity zones occupying 11.43% of frame\"}, {\"type\": \"edge_crack_density\", \"value\": 0.0037, \"confidence\": 0.9, \"status\": \"OBSERVED\", \"details\": \"High-frequency surface fissure edge density: 0.37%\"}, {\"type\": \"subsurface_structural_compaction\", \"value\": \"undetermined\", \"confidence\": 0.5, \"status\": \"UNKNOWN\", \"details\": \"Ground soil and sub-base aggregate compaction cannot be determined from 2D photograph\"}, {\"type\": \"repair_material_chemical_specification\", \"value\": \"undetermined\", \"confidence\": 0.5, \"status\": \"UNKNOWN\", \"details\": \"Bitumen binder grade and aggregate ratio cannot be determined without laboratory core test\"}, {\"type\": \"road_damage\", \"value\": \"pothole_visible\", \"confidence\": 0.96, \"status\": \"INFERRED\", \"details\": \"Irregular low-reflectance cavity and fractured perimeter indicate active pothole\"}, {\"type\": \"damage_presence\", \"value\": true, \"confidence\": 0.96, \"status\": \"INFERRED\", \"details\": \"Ground truth road surface is actively degraded and presents traffic hazard\"}, {\"type\": \"visual_severity_cue\", \"value\": \"HIGH\", \"confidence\": 0.96, \"status\": \"INFERRED\", \"details\": \"Severity classified as HIGH based on cavity area ratio 11.43%\"}]",
+      "confidence": 0.96,
+      "created_at": "2026-10-07T19:45:55.864696"
+    },
+    {
+      "id": "EXT-CC76030E",
+      "evidence_id": "EV-001-PHOTO",
+      "field": "ocr_raw_text",
+      "value": "MUNICIPAL CORRIDOR: GATE 2 - NORTH SECTOR\nSURFACE CONDITION EVIDENCE CAPTURE\n[SEVERE POTHOLE CAVITY: 45cm DEPTH]",
+      "confidence": 0.9,
+      "created_at": "2026-10-07T19:45:55.864696"
+    },
+    {
+      "id": "EXT-F106EEC4",
+      "evidence_id": "EV-001-PHOTO",
+      "field": "common_evidence_schema",
+      "value": "{\"evidence_id\":\"EV-001-PHOTO\",\"source_type\":\"IMAGE\",\"location\":\"Gate 2 Road, North Sector\",\"claims\":[{\"attribute\":\"damage_present\",\"value\":true,\"entity\":\"road\",\"date\":null,\"location\":\"Gate 2 Road, North Sector\",\"severity\":\"HIGH\",\"confidence\":0.96,\"evidence_id\":\"EV-001-PHOTO\",\"source_type\":\"IMAGE\",\"extraction_method\":\"opencv_surface_contour_analyzer\"}],\"observations\":[{\"type\":\"surface_roughness_variance\",\"value\":2533.3,\"confidence\":0.95,\"status\":\"OBSERVED\",\"details\":\"Laplacian variance computed as 2533.3\"},{\"type\":\"cavity_area_ratio\",\"value\":0.1143,\"confidence\":0.92,\"status\":\"OBSERVED\",\"details\":\"1 distinct low-luminance cavity zones occupying 11.43% of frame\"},{\"type\":\"edge_crack_density\",\"value\":0.0037,\"confidence\":0.9,\"status\":\"OBSERVED\",\"details\":\"High-frequency surface fissure edge density: 0.37%\"},{\"type\":\"subsurface_structural_compaction\",\"value\":\"undetermined\",\"confidence\":0.5,\"status\":\"UNKNOWN\",\"details\":\"Ground soil and sub-base aggregate compaction cannot be determined from 2D photograph\"},{\"type\":\"repair_material_chemical_specification\",\"value\":\"undetermined\",\"confidence\":0.5,\"status\":\"UNKNOWN\",\"details\":\"Bitumen binder grade and aggregate ratio cannot be determined without laboratory core test\"},{\"type\":\"road_damage\",\"value\":\"pothole_visible\",\"confidence\":0.96,\"status\":\"INFERRED\",\"details\":\"Irregular low-reflectance cavity and fractured perimeter indicate active pothole\"},{\"type\":\"damage_presence\",\"value\":true,\"confidence\":0.96,\"status\":\"INFERRED\",\"details\":\"Ground truth road surface is actively degraded and presents traffic hazard\"},{\"type\":\"visual_severity_cue\",\"value\":\"HIGH\",\"confidence\":0.96,\"status\":\"INFERRED\",\"details\":\"Severity classified as HIGH based on cavity area ratio 11.43%\"}],\"dates\":[],\"status\":null,\"severity_cues\":[\"HIGH\"],\"extraction_method\":\"opencv_vision_and_ocr\",\"source_confidence\":\"high\"}",
+      "confidence": 0.95,
+      "created_at": "2026-10-07T19:45:55.864696"
+    },
+    {
+      "id": "EXT-3CB7FC24",
+      "evidence_id": "EV-002-PDF",
+      "field": "repair_status",
+      "value": "COMPLETED",
+      "confidence": 0.95,
+      "created_at": "2026-10-07T19:45:55.880724"
+    },
+    {
+      "id": "EXT-E6E8D024",
+      "evidence_id": "EV-002-PDF",
+      "field": "report_id",
+      "value": "WO-2026-8812",
+      "confidence": 0.98,
+      "created_at": "2026-10-07T19:45:55.880724"
+    },
+    {
+      "id": "EXT-0E1844DE",
+      "evidence_id": "EV-002-PDF",
+      "field": "completion_statement",
+      "value": "successfully repaired, asphalt resurfaced and sealed",
+      "confidence": 0.95,
+      "created_at": "2026-10-07T19:45:55.880724"
+    },
+    {
+      "id": "EXT-AA11B99A",
+      "evidence_id": "EV-002-PDF",
+      "field": "common_evidence_schema",
+      "value": "{\"evidence_id\":\"EV-002-PDF\",\"source_type\":\"PDF\",\"location\":\"Gate 2 Road, North Sector\",\"claims\":[{\"attribute\":\"repair_status\",\"value\":\"completed\",\"entity\":\"road\",\"date\":\"October 01, 2026\",\"location\":\"Gate 2 Road\",\"severity\":null,\"confidence\":0.95,\"evidence_id\":\"EV-002-PDF\",\"source_type\":\"PDF\",\"extraction_method\":\"pdf_text_parser\"},{\"attribute\":\"inspection_status\",\"value\":\"certified\",\"entity\":\"inspection\",\"date\":\"October 01, 2026\",\"location\":\"Gate 2 Road\",\"severity\":null,\"confidence\":0.92,\"evidence_id\":\"EV-002-PDF\",\"source_type\":\"PDF\",\"extraction_method\":\"pdf_text_parser\"}],\"observations\":[],\"dates\":[\"October 01, 2026\",\"October 01, 2026\",\"2026-10-01\"],\"status\":\"COMPLETED\",\"severity_cues\":[],\"extraction_method\":\"pdf_structured_parser\",\"source_confidence\":\"high\"}",
+      "confidence": 0.95,
+      "created_at": "2026-10-07T19:45:55.880724"
+    },
+    {
+      "id": "EXT-DF2E2D53",
+      "evidence_id": "EV-003-VOICE",
+      "field": "transcript",
+      "value": "Gate 2 road is still damaged. The huge pothole has been there for over two months even after the municipal department claimed repair was completed. Cars are getting their tires ruined.",
+      "confidence": 0.91,
+      "created_at": "2026-10-07T19:45:56.596885"
+    },
+    {
+      "id": "EXT-35162543",
+      "evidence_id": "EV-003-VOICE",
+      "field": "structured_entities",
+      "value": "{\"location\": \"Gate 2 Road\", \"damage_present\": true, \"damage_persistence\": true, \"duration\": \"2 months\", \"repair_problem\": true}",
+      "confidence": 0.91,
+      "created_at": "2026-10-07T19:45:56.596885"
+    },
+    {
+      "id": "EXT-06BD2393",
+      "evidence_id": "EV-003-VOICE",
+      "field": "common_evidence_schema",
+      "value": "{\"evidence_id\":\"EV-003-VOICE\",\"source_type\":\"AUDIO\",\"location\":\"Gate 2 Road\",\"claims\":[{\"attribute\":\"damage_present\",\"value\":\"true\",\"entity\":\"road\",\"date\":null,\"location\":\"Gate 2 Road\",\"severity\":\"high\",\"confidence\":0.86,\"evidence_id\":\"EV-003-VOICE\",\"source_type\":\"AUDIO\",\"extraction_method\":\"faster-whisper_acoustic_model\"},{\"attribute\":\"damage_duration\",\"value\":\"2 months\",\"entity\":\"road_damage\",\"date\":null,\"location\":\"Gate 2 Road\",\"severity\":\"high\",\"confidence\":0.84,\"evidence_id\":\"EV-003-VOICE\",\"source_type\":\"AUDIO\",\"extraction_method\":\"faster-whisper_acoustic_model\"},{\"attribute\":\"repair_integrity\",\"value\":\"disputed\",\"entity\":\"repair_work\",\"date\":null,\"location\":\"Gate 2 Road\",\"severity\":\"high\",\"confidence\":0.82,\"evidence_id\":\"EV-003-VOICE\",\"source_type\":\"AUDIO\",\"extraction_method\":\"faster-whisper_acoustic_model\"}],\"observations\":[],\"dates\":[],\"status\":null,\"severity_cues\":[],\"extraction_method\":\"faster-whisper_audio_pipeline\",\"source_confidence\":\"high\"}",
+      "confidence": 0.95,
+      "created_at": "2026-10-07T19:45:56.596885"
+    },
+    {
+      "id": "EXT-453C9DB3",
+      "evidence_id": "EV-004-TEXT",
+      "field": "analyzed_text_sample",
+      "value": "Citizen Grievance #CG-9921\nDate: 2026-10-06\nLocation: Gate 2 Road near North Sector roundabout\nComplaint: The road remains heavily damaged. Deep pothole causing major traffic slowdown and bike accidents. Department claimed repair completed last week but no repair work was ever done. Please send physical inspection team immediately.",
+      "confidence": 0.92,
+      "created_at": "2026-10-07T19:46:00.708739"
+    },
+    {
+      "id": "EXT-5605AD68",
+      "evidence_id": "EV-004-TEXT",
+      "field": "common_evidence_schema",
+      "value": "{\"evidence_id\":\"EV-004-TEXT\",\"source_type\":\"TEXT\",\"location\":\"Gate 2 Road near North Sector roundabout\",\"claims\":[{\"attribute\":\"damage_status\",\"value\":\"present\",\"entity\":\"road\",\"date\":\"2026-10-06\",\"location\":\"Gate 2 Road near North Sector roundabout\",\"severity\":\"HIGH\",\"confidence\":0.93,\"evidence_id\":\"EV-004-TEXT\",\"source_type\":\"TEXT\",\"extraction_method\":\"deterministic_civic_nlp\"},{\"attribute\":\"repair_status\",\"value\":\"completed\",\"entity\":\"road\",\"date\":\"2026-10-06\",\"location\":\"Gate 2 Road near North Sector roundabout\",\"severity\":null,\"confidence\":0.92,\"evidence_id\":\"EV-004-TEXT\",\"source_type\":\"TEXT\",\"extraction_method\":\"deterministic_civic_nlp\"}],\"observations\":[],\"dates\":[],\"status\":null,\"severity_cues\":[],\"extraction_method\":\"llm_and_civic_nlp\",\"source_confidence\":\"high\"}",
+      "confidence": 0.95,
+      "created_at": "2026-10-07T19:46:00.708739"
+    }
+  ],
+  "claims": [
+    {
+      "id": "CL-D9539973",
+      "case_id": "CASE-GATE2-DEMO",
+      "evidence_id": "EV-001-PHOTO",
+      "entity": "road",
+      "attribute": "damage_present",
+      "value": "true",
+      "date": null,
+      "location": "Gate 2 Road, North Sector",
+      "severity": "HIGH",
+      "confidence": 0.96,
+      "source_type": "IMAGE",
+      "extraction_method": "opencv_surface_contour_analyzer",
+      "created_at": "2026-10-07T19:45:55.863692"
+    },
+    {
+      "id": "CL-4174B733",
+      "case_id": "CASE-GATE2-DEMO",
+      "evidence_id": "EV-002-PDF",
+      "entity": "road",
+      "attribute": "repair_status",
+      "value": "completed",
+      "date": "October 01, 2026",
+      "location": "Gate 2 Road",
+      "severity": null,
+      "confidence": 0.95,
+      "source_type": "PDF",
+      "extraction_method": "pdf_text_parser",
+      "created_at": "2026-10-07T19:45:55.880724"
+    },
+    {
+      "id": "CL-CDCDF1B1",
+      "case_id": "CASE-GATE2-DEMO",
+      "evidence_id": "EV-002-PDF",
+      "entity": "inspection",
+      "attribute": "inspection_status",
+      "value": "certified",
+      "date": "October 01, 2026",
+      "location": "Gate 2 Road",
+      "severity": null,
+      "confidence": 0.92,
+      "source_type": "PDF",
+      "extraction_method": "pdf_text_parser",
+      "created_at": "2026-10-07T19:45:55.880724"
+    },
+    {
+      "id": "CL-4D71046D",
+      "case_id": "CASE-GATE2-DEMO",
+      "evidence_id": "EV-003-VOICE",
+      "entity": "road",
+      "attribute": "damage_present",
+      "value": "true",
+      "date": null,
+      "location": "Gate 2 Road",
+      "severity": "high",
+      "confidence": 0.86,
+      "source_type": "AUDIO",
+      "extraction_method": "faster-whisper_acoustic_model",
+      "created_at": "2026-10-07T19:45:56.596885"
+    },
+    {
+      "id": "CL-4DE48D2C",
+      "case_id": "CASE-GATE2-DEMO",
+      "evidence_id": "EV-003-VOICE",
+      "entity": "road_damage",
+      "attribute": "damage_duration",
+      "value": "2 months",
+      "date": null,
+      "location": "Gate 2 Road",
+      "severity": "high",
+      "confidence": 0.84,
+      "source_type": "AUDIO",
+      "extraction_method": "faster-whisper_acoustic_model",
+      "created_at": "2026-10-07T19:45:56.596885"
+    },
+    {
+      "id": "CL-BC7E6E71",
+      "case_id": "CASE-GATE2-DEMO",
+      "evidence_id": "EV-003-VOICE",
+      "entity": "repair_work",
+      "attribute": "repair_integrity",
+      "value": "disputed",
+      "date": null,
+      "location": "Gate 2 Road",
+      "severity": "high",
+      "confidence": 0.82,
+      "source_type": "AUDIO",
+      "extraction_method": "faster-whisper_acoustic_model",
+      "created_at": "2026-10-07T19:45:56.596885"
+    },
+    {
+      "id": "CL-EB390467",
+      "case_id": "CASE-GATE2-DEMO",
+      "evidence_id": "EV-004-TEXT",
+      "entity": "road",
+      "attribute": "damage_status",
+      "value": "present",
+      "date": "2026-10-06",
+      "location": "Gate 2 Road near North Sector roundabout",
+      "severity": "HIGH",
+      "confidence": 0.93,
+      "source_type": "TEXT",
+      "extraction_method": "deterministic_civic_nlp",
+      "created_at": "2026-10-07T19:46:00.707741"
+    },
+    {
+      "id": "CL-9EFA3909",
+      "case_id": "CASE-GATE2-DEMO",
+      "evidence_id": "EV-004-TEXT",
+      "entity": "road",
+      "attribute": "repair_status",
+      "value": "completed",
+      "date": "2026-10-06",
+      "location": "Gate 2 Road near North Sector roundabout",
+      "severity": null,
+      "confidence": 0.92,
+      "source_type": "TEXT",
+      "extraction_method": "deterministic_civic_nlp",
+      "created_at": "2026-10-07T19:46:00.707741"
+    }
+  ],
+  "correlations": [
+    {
+      "id": "CORR-CCCE9BA8",
+      "case_id": "CASE-GATE2-DEMO",
+      "entity_type": "location",
+      "matched_value": "Gate 2 Road, North Sector",
+      "evidence_ids": [
+        "EV-004-TEXT",
+        "EV-001-PHOTO",
+        "EV-002-PDF",
+        "EV-003-VOICE"
+      ],
+      "details": "4 evidence sources independently reference location 'Gate 2 Road, North Sector'",
+      "created_at": "2026-10-07T19:46:00.714181"
+    },
+    {
+      "id": "CORR-88026AD9",
+      "case_id": "CASE-GATE2-DEMO",
+      "entity_type": "damage_entity",
+      "matched_value": "Road Pothole / Surface Degradation",
+      "evidence_ids": [
+        "EV-001-PHOTO",
+        "EV-003-VOICE"
+      ],
+      "details": "2 evidence sources describe the same road surface damage incident.",
+      "created_at": "2026-10-07T19:46:00.714181"
+    }
+  ],
+  "decision": {
+    "id": "DEC-2DC97434",
+    "case_id": "CASE-GATE2-DEMO",
+    "decision": "CONFLICT",
+    "severity": "HIGH",
+    "score": 0.92,
+    "rationale": "EVIDENCE CONFLICT DETECTED: Official document (EV-002-PDF, EV-004-TEXT) claims road repair is COMPLETED. However, current multimodal field evidence (EV-001-PHOTO, EV-003-VOICE, EV-004-TEXT) demonstrates active potholes and road damage. Citizen reports independently corroborate continuous damage.",
+    "recommended_action": "Physical field inspection required",
+    "supporting_evidence": [
+      "EV-001-PHOTO",
+      "EV-003-VOICE",
+      "EV-004-TEXT"
+    ],
+    "contradicting_evidence": [
+      "EV-002-PDF",
+      "EV-004-TEXT"
+    ],
+    "relationships": [
+      {
+        "source_evidence_id": "EV-001-PHOTO",
+        "target_evidence_id": "EV-002-PDF",
+        "relationship_type": "CONTRADICTS",
+        "description": "Ground evidence EV-001-PHOTO detects active road damage, which directly CONTRADICTS completion record EV-002-PDF."
+      },
+      {
+        "source_evidence_id": "EV-001-PHOTO",
+        "target_evidence_id": "EV-004-TEXT",
+        "relationship_type": "CONTRADICTS",
+        "description": "Ground evidence EV-001-PHOTO detects active road damage, which directly CONTRADICTS completion record EV-004-TEXT."
+      },
+      {
+        "source_evidence_id": "EV-003-VOICE",
+        "target_evidence_id": "EV-002-PDF",
+        "relationship_type": "CONTRADICTS",
+        "description": "Ground evidence EV-003-VOICE detects active road damage, which directly CONTRADICTS completion record EV-002-PDF."
+      },
+      {
+        "source_evidence_id": "EV-003-VOICE",
+        "target_evidence_id": "EV-004-TEXT",
+        "relationship_type": "CONTRADICTS",
+        "description": "Ground evidence EV-003-VOICE detects active road damage, which directly CONTRADICTS completion record EV-004-TEXT."
+      },
+      {
+        "source_evidence_id": "EV-004-TEXT",
+        "target_evidence_id": "EV-002-PDF",
+        "relationship_type": "CONTRADICTS",
+        "description": "Ground evidence EV-004-TEXT detects active road damage, which directly CONTRADICTS completion record EV-002-PDF."
+      },
+      {
+        "source_evidence_id": "EV-004-TEXT",
+        "target_evidence_id": "EV-004-TEXT",
+        "relationship_type": "CONTRADICTS",
+        "description": "Ground evidence EV-004-TEXT detects active road damage, which directly CONTRADICTS completion record EV-004-TEXT."
+      },
+      {
+        "source_evidence_id": "EV-001-PHOTO",
+        "target_evidence_id": "EV-003-VOICE",
+        "relationship_type": "CORROBORATES",
+        "description": "Evidence EV-001-PHOTO and EV-003-VOICE mutually corroborate active pothole/road damage at this location."
+      },
+      {
+        "source_evidence_id": "EV-003-VOICE",
+        "target_evidence_id": "EV-004-TEXT",
+        "relationship_type": "CORROBORATES",
+        "description": "Evidence EV-003-VOICE and EV-004-TEXT mutually corroborate active pothole/road damage at this location."
+      }
+    ],
+    "severity_reasons": [
+      "Official completion document claims repair completed",
+      "Ground visual / citizen audio evidence (3 source(s)) verify active road damage persists",
+      "Administrative record directly contradicts physical reality",
+      "Damage persistence indicates unexecuted work, material defect, or premature failure",
+      "Same physical municipal corridor confirmed across all sources"
+    ],
+    "created_at": "2026-10-07T19:46:00.722844"
+  },
+  "relationships": [
+    {
+      "source_evidence_id": "EV-001-PHOTO",
+      "target_evidence_id": "EV-002-PDF",
+      "relationship_type": "CONTRADICTS",
+      "description": "Ground evidence EV-001-PHOTO detects active road damage, which directly CONTRADICTS completion record EV-002-PDF."
+    },
+    {
+      "source_evidence_id": "EV-001-PHOTO",
+      "target_evidence_id": "EV-004-TEXT",
+      "relationship_type": "CONTRADICTS",
+      "description": "Ground evidence EV-001-PHOTO detects active road damage, which directly CONTRADICTS completion record EV-004-TEXT."
+    },
+    {
+      "source_evidence_id": "EV-003-VOICE",
+      "target_evidence_id": "EV-002-PDF",
+      "relationship_type": "CONTRADICTS",
+      "description": "Ground evidence EV-003-VOICE detects active road damage, which directly CONTRADICTS completion record EV-002-PDF."
+    },
+    {
+      "source_evidence_id": "EV-003-VOICE",
+      "target_evidence_id": "EV-004-TEXT",
+      "relationship_type": "CONTRADICTS",
+      "description": "Ground evidence EV-003-VOICE detects active road damage, which directly CONTRADICTS completion record EV-004-TEXT."
+    },
+    {
+      "source_evidence_id": "EV-004-TEXT",
+      "target_evidence_id": "EV-002-PDF",
+      "relationship_type": "CONTRADICTS",
+      "description": "Ground evidence EV-004-TEXT detects active road damage, which directly CONTRADICTS completion record EV-002-PDF."
+    },
+    {
+      "source_evidence_id": "EV-004-TEXT",
+      "target_evidence_id": "EV-004-TEXT",
+      "relationship_type": "CONTRADICTS",
+      "description": "Ground evidence EV-004-TEXT detects active road damage, which directly CONTRADICTS completion record EV-004-TEXT."
+    },
+    {
+      "source_evidence_id": "EV-001-PHOTO",
+      "target_evidence_id": "EV-003-VOICE",
+      "relationship_type": "CORROBORATES",
+      "description": "Evidence EV-001-PHOTO and EV-003-VOICE mutually corroborate active pothole/road damage at this location."
+    },
+    {
+      "source_evidence_id": "EV-003-VOICE",
+      "target_evidence_id": "EV-004-TEXT",
+      "relationship_type": "CORROBORATES",
+      "description": "Evidence EV-003-VOICE and EV-004-TEXT mutually corroborate active pothole/road damage at this location."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "REV-0795B6F8",
+      "case_id": "CASE-GATE2-DEMO",
+      "reviewer": "Chief Municipal Auditor S. Rao",
+      "old_decision": "CONFLICT",
+      "new_decision": "PHYSICAL_INSPECTION_ORDERED",
+      "reason": "Conflicting completion document vs ground photos warrants independent team dispatch.",
+      "timestamp": "2026-10-07T19:46:00.754223"
+    }
+  ],
+  "audit_events": [
+    {
+      "id": "AUD-15A9C75C",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "EVIDENCE_SEEDED",
+      "description": "Hero demo evidence EV-001-PHOTO (IMAGE) ingested.",
+      "timestamp": "2026-10-07T19:45:50.452456"
+    },
+    {
+      "id": "AUD-17F4D77B",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "EVIDENCE_SEEDED",
+      "description": "Hero demo evidence EV-002-PDF (PDF) ingested.",
+      "timestamp": "2026-10-07T19:45:50.452456"
+    },
+    {
+      "id": "AUD-FB4C3AFD",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "EVIDENCE_SEEDED",
+      "description": "Hero demo evidence EV-003-VOICE (AUDIO) ingested.",
+      "timestamp": "2026-10-07T19:45:50.452456"
+    },
+    {
+      "id": "AUD-3A102459",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "EVIDENCE_SEEDED",
+      "description": "Hero demo evidence EV-004-TEXT (TEXT) ingested.",
+      "timestamp": "2026-10-07T19:45:50.452456"
+    },
+    {
+      "id": "AUD-393DF46D",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "EXTRACTION_COMPLETE",
+      "description": "Evidence EV-001-PHOTO processed via opencv_vision_and_ocr. Generated 1 normalized claims.",
+      "timestamp": "2026-10-07T19:45:55.861694"
+    },
+    {
+      "id": "AUD-0BCD68A4",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "EXTRACTION_COMPLETE",
+      "description": "Evidence EV-002-PDF processed via pdf_structured_parser. Generated 2 normalized claims.",
+      "timestamp": "2026-10-07T19:45:55.879728"
+    },
+    {
+      "id": "AUD-9008FA59",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "EXTRACTION_COMPLETE",
+      "description": "Evidence EV-003-VOICE processed via faster-whisper_audio_pipeline. Generated 3 normalized claims.",
+      "timestamp": "2026-10-07T19:45:56.595410"
+    },
+    {
+      "id": "AUD-A4F18E4B",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "EXTRACTION_COMPLETE",
+      "description": "Evidence EV-004-TEXT processed via llm_and_civic_nlp. Generated 2 normalized claims.",
+      "timestamp": "2026-10-07T19:46:00.706741"
+    },
+    {
+      "id": "AUD-902BE8F8",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "ANALYSIS_COMPLETED",
+      "description": "Deterministic analysis produced decision 'CONFLICT' with severity 'HIGH' (8 relationship edges saved).",
+      "timestamp": "2026-10-07T19:46:00.721845"
+    },
+    {
+      "id": "AUD-596E912D",
+      "case_id": "CASE-GATE2-DEMO",
+      "event_type": "HUMAN_REVIEW_RECORDED",
+      "description": "Reviewer 'Chief Municipal Auditor S. Rao' set decision to 'PHYSICAL_INSPECTION_ORDERED'. Reason: Conflicting completion document vs ground photos warrants independent team dispatch.",
+      "timestamp": "2026-10-07T19:46:00.753222"
+    }
+  ]
+}

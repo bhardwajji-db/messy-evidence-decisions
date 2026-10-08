@@ -1,0 +1,245 @@
+{
+  "version": "1.0.0",
+  "description": "5 Core Municipal Inspection Verification Demo Cases with complete data provenance and expected decisioning outcomes.",
+  "cases": [
+    {
+      "case_id": "DEMO-001",
+      "title": "Road Repair Verification \u2014 Gate 2 (Winning Hero Demo)",
+      "category": "Road / Infrastructure",
+      "location": "Gate 2 Road, North Sector",
+      "reporter": "Citizen Grievance Cell & Ward Auditor",
+      "summary": "Official completion order WO-8812 marked COMPLETED vs photographic cavity proof, citizen voice grievance, and text note.",
+      "data_origin": "derived",
+      "expected": {
+        "decision": "CONFLICT",
+        "severity": "HIGH",
+        "recommended_action": "Physical field inspection required",
+        "relationship_type": "CONTRADICTS"
+      },
+      "evidence_items": [
+        {
+          "id": "EV-D1-001-PHOTO",
+          "source_type": "IMAGE",
+          "filename": "gate2_pothole_cavity.jpg",
+          "file_path": "data/demo/images/gate2_pothole_cavity.jpg",
+          "sha256": "602314aa318f119247ac974de7f616ede66bfd02310694dee12f1186f857f3fb",
+          "location": "Gate 2 Road, North Sector",
+          "uploader": "Citizen Mobile App",
+          "data_origin": "derived",
+          "description": "Photographic inspection showing 45cm deep cavity on Gate 2 corridor."
+        },
+        {
+          "id": "EV-D1-002-PDF",
+          "source_type": "PDF",
+          "filename": "WO_2026_8812_Gate2_Completion.pdf",
+          "file_path": "data/demo/official_records/WO_2026_8812_Gate2_Completion.pdf",
+          "sha256": "b56a74035450584abca142877859ece533fd0f906eb75b3c6e97e098880fba84",
+          "location": "Gate 2 Road, North Sector",
+          "uploader": "Public Works Dept Portal",
+          "data_origin": "derived",
+          "description": "Official completion order WO-2026-8812 claiming repair was executed and certified."
+        },
+        {
+          "id": "EV-D1-003-VOICE",
+          "source_type": "AUDIO",
+          "filename": "gate2_citizen_audio_complaint.wav",
+          "file_path": "data/demo/audio/gate2_citizen_audio_complaint.wav",
+          "sha256": "cec435009dd9fcfb9ddc2a12c57137e0126f05f544b81118877d5d24f1f098bf",
+          "location": "Gate 2 Road",
+          "uploader": "Municipal Helpline 1916",
+          "data_origin": "synthetic",
+          "description": "Citizen IVR audio testimony reporting persistent pothole unbroken for 2 months."
+        },
+        {
+          "id": "EV-D1-004-TEXT",
+          "source_type": "TEXT",
+          "filename": "gate2_citizen_text_grievance.txt",
+          "file_path": "data/demo/complaints/gate2_citizen_text_grievance.txt",
+          "sha256": "68f03683671aafd0a15e40d913ca7a2eaf4bdfbb71c53e56d349e85579f1509f",
+          "location": "Gate 2 Road near North Sector roundabout",
+          "uploader": "Ward Supervisor Log",
+          "data_origin": "derived",
+          "description": "Citizen grievance CG-9921 demanding physical inspection."
+        }
+      ]
+    },
+    {
+      "case_id": "DEMO-002",
+      "title": "Road Resurfacing Verification \u2014 Main Market Road",
+      "category": "Road / Infrastructure",
+      "location": "Main Market Road, Ward 4",
+      "reporter": "Ward Quality Assurance Unit",
+      "summary": "Official completion order WO-4019 corroborated by smooth resurfaced asphalt photo and citizen commuter forum verification.",
+      "data_origin": "derived",
+      "expected": {
+        "decision": "VERIFIED",
+        "severity": "LOW",
+        "recommended_action": "Approve repair sign-off and close case",
+        "relationship_type": "SUPPORTS"
+      },
+      "evidence_items": [
+        {
+          "id": "EV-D2-001-PHOTO",
+          "source_type": "IMAGE",
+          "filename": "market_road_resurfaced_smooth.jpg",
+          "file_path": "data/demo/images/market_road_resurfaced_smooth.jpg",
+          "sha256": "a045b29863296ca2a212e6b5c265630814926e0e4e39064827d9f5cc9359cf8f",
+          "location": "Main Market Road, Ward 4",
+          "uploader": "Municipal Inspector Mobile",
+          "data_origin": "derived",
+          "description": "Ground photo of newly resurfaced Grade-1 bitumen with clean markings."
+        },
+        {
+          "id": "EV-D2-002-PDF",
+          "source_type": "PDF",
+          "filename": "WO_2026_4019_Market_Resurfacing.pdf",
+          "file_path": "data/demo/official_records/WO_2026_4019_Market_Resurfacing.pdf",
+          "sha256": "1165d4bb5bdab7e1daaae04dacc6a4a6e41c9d00bb1d55c78ce6260ab0f95d7b",
+          "location": "Main Market Road, Ward 4",
+          "uploader": "Civil Works Engineering Cell",
+          "data_origin": "derived",
+          "description": "Work Order WO-2026-4019 certification of satisfactory completion."
+        },
+        {
+          "id": "EV-D2-003-TEXT",
+          "source_type": "TEXT",
+          "filename": "market_road_commuter_verification.txt",
+          "file_path": "data/demo/complaints/market_road_commuter_verification.txt",
+          "sha256": "4d01c6872087716d14fc87a4d1aab8b569fd0de25cb0e3c339cc7781d84bc600",
+          "location": "Main Market Road, Ward 4",
+          "uploader": "Citizen Grievance Forum",
+          "data_origin": "derived",
+          "description": "Commuter forum verification that resurfacing was completed smoothly."
+        }
+      ]
+    },
+    {
+      "case_id": "DEMO-003",
+      "title": "South Bypass Drainage & Road Inspection \u2014 Sector 8",
+      "category": "Road / Infrastructure",
+      "location": "South Bypass Ring Road, Sector 8",
+      "reporter": "General Public Helpdesk",
+      "summary": "Ambiguous citizen inquiry ticket lacking photographic evidence or municipal work orders.",
+      "data_origin": "derived",
+      "expected": {
+        "decision": "INSUFFICIENT EVIDENCE",
+        "severity": "LOW",
+        "recommended_action": "Request additional evidence",
+        "relationship_type": null
+      },
+      "evidence_items": [
+        {
+          "id": "EV-D3-001-TEXT",
+          "source_type": "TEXT",
+          "filename": "south_bypass_inquiry_ticket.txt",
+          "file_path": "data/demo/complaints/south_bypass_inquiry_ticket.txt",
+          "sha256": "a48b9fc3f60421423483c245fc338e080ea08dde6ab13c2969ae3544eb86da54",
+          "location": "South Bypass Ring Road, Sector 8",
+          "uploader": "Helpdesk Operator",
+          "data_origin": "derived",
+          "description": "Citizen inquiry ticket INQ-8821 requesting general scheduling details."
+        }
+      ]
+    },
+    {
+      "case_id": "DEMO-004",
+      "title": "Road Damage Corroboration \u2014 North Arterial Corridor",
+      "category": "Road / Infrastructure",
+      "location": "North Arterial Road, Sector 12",
+      "reporter": "Multi-Witness Civic Corroboration Cell",
+      "summary": "Multiple independent citizen complaints (photo + voice + text) corroborating severe potholes without an existing official work order.",
+      "data_origin": "derived",
+      "expected": {
+        "decision": "PARTIALLY VERIFIED",
+        "severity": "MEDIUM",
+        "recommended_action": "Field verification and work order generation required",
+        "relationship_type": "CORROBORATES"
+      },
+      "evidence_items": [
+        {
+          "id": "EV-D4-001-PHOTO",
+          "source_type": "IMAGE",
+          "filename": "north_arterial_pothole_cluster.jpg",
+          "file_path": "data/demo/images/north_arterial_pothole_cluster.jpg",
+          "sha256": "da2deed7accd57da51ea46b2f412944038a0f34dc9a946807296a1309462e56d",
+          "location": "North Arterial Road, Sector 12",
+          "uploader": "Citizen Mobile App",
+          "data_origin": "derived",
+          "description": "Ground photo of active pothole cluster on North Arterial Road."
+        },
+        {
+          "id": "EV-D4-002-VOICE",
+          "source_type": "AUDIO",
+          "filename": "north_arterial_voice_report.wav",
+          "file_path": "data/demo/audio/north_arterial_voice_report.wav",
+          "sha256": "cec435009dd9fcfb9ddc2a12c57137e0126f05f544b81118877d5d24f1f098bf",
+          "location": "North Arterial Road",
+          "uploader": "Municipal Helpline 1916",
+          "data_origin": "synthetic",
+          "description": "Helpline dispatch call reporting severe pothole section causing traffic congestion."
+        },
+        {
+          "id": "EV-D4-003-TEXT",
+          "source_type": "TEXT",
+          "filename": "north_arterial_ward_report.txt",
+          "file_path": "data/demo/complaints/north_arterial_ward_report.txt",
+          "sha256": "76195a1e5df813eeba5d3ea79645f04f615c3dc514f65f87e9b34d8fd7b5bac7",
+          "location": "North Arterial Road, Sector 12",
+          "uploader": "Ward Councillor Inspection Request",
+          "data_origin": "derived",
+          "description": "Councillor report confirming damage and noting absence of prior work orders."
+        }
+      ]
+    },
+    {
+      "case_id": "DEMO-005",
+      "title": "Road Repair Verification \u2014 Gate 2 vs Gate 5 Spatial Audit",
+      "category": "Road / Infrastructure",
+      "location": "Gate 2 Road, North Sector",
+      "reporter": "Municipal Integrity Audit Unit",
+      "summary": "Official completion order WO-8812 (Gate 2 Road) submitted alongside citizen damage evidence from Gate 5 Road (Location Mismatch / Spatial Discrepancy).",
+      "data_origin": "derived",
+      "expected": {
+        "decision": "INSUFFICIENT EVIDENCE",
+        "severity": "LOW",
+        "recommended_action": "Verify location metadata and submit geo-tagged evidence for matching site",
+        "relationship_type": "UNSUPPORTED"
+      },
+      "evidence_items": [
+        {
+          "id": "EV-D5-001-PDF",
+          "source_type": "PDF",
+          "filename": "WO_2026_8812_Gate2_Completion.pdf",
+          "file_path": "data/demo/official_records/WO_2026_8812_Gate2_Completion.pdf",
+          "sha256": "b56a74035450584abca142877859ece533fd0f906eb75b3c6e97e098880fba84",
+          "location": "Gate 2 Road, North Sector",
+          "uploader": "Public Works Dept Portal",
+          "data_origin": "derived",
+          "description": "Completion order for Gate 2 Road."
+        },
+        {
+          "id": "EV-D5-002-PHOTO",
+          "source_type": "IMAGE",
+          "filename": "gate5_road_damage.jpg",
+          "file_path": "data/demo/images/gate5_road_damage.jpg",
+          "sha256": "300c23a6506736ed2363432c331a74ba405a93c8a6ed03dcf09b08ddc3b2db7f",
+          "location": "Gate 5 Road, South Sector",
+          "uploader": "Citizen Mobile App",
+          "data_origin": "derived",
+          "description": "Photo of pothole on Gate 5 Road."
+        },
+        {
+          "id": "EV-D5-003-TEXT",
+          "source_type": "TEXT",
+          "filename": "gate5_resident_complaint.txt",
+          "file_path": "data/demo/complaints/gate5_resident_complaint.txt",
+          "sha256": "2106fbaaa9c070895c944fbf7f325a50a6c9e5a0695fde06e651960f78430c70",
+          "location": "Gate 5 Road, South Sector",
+          "uploader": "Ward Helpdesk",
+          "data_origin": "derived",
+          "description": "Complaint ticket specifically for Gate 5 Road."
+        }
+      ]
+    }
+  ]
+}

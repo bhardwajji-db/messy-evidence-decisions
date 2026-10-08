@@ -1,0 +1,28 @@
+{
+  "case_id": "DEMO-003",
+  "title": "South Bypass Drainage & Road Inspection \u2014 Sector 8",
+  "category": "Road / Infrastructure",
+  "location": "South Bypass Ring Road, Sector 8",
+  "reporter": "General Public Helpdesk",
+  "summary": "Ambiguous citizen inquiry ticket lacking photographic evidence or municipal work orders.",
+  "data_origin": "derived",
+  "expected": {
+    "decision": "INSUFFICIENT EVIDENCE",
+    "severity": "LOW",
+    "recommended_action": "Request additional evidence",
+    "relationship_type": null
+  },
+  "evidence_items": [
+    {
+      "id": "EV-D3-001-TEXT",
+      "source_type": "TEXT",
+      "filename": "south_bypass_inquiry_ticket.txt",
+      "file_path": "data/demo/complaints/south_bypass_inquiry_ticket.txt",
+      "sha256": "a48b9fc3f60421423483c245fc338e080ea08dde6ab13c2969ae3544eb86da54",
+      "location": "South Bypass Ring Road, Sector 8",
+      "uploader": "Helpdesk Operator",
+      "data_origin": "derived",
+      "description": "Citizen inquiry ticket INQ-8821 requesting general scheduling details."
+    }
+  ]
+}

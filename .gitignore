@@ -1,0 +1,78 @@
+# ========================================================================
+# .gitignore - Messy Evidence -> Decisions
+# Pure clean code repository (dependencies, runtime cache & temp files excluded)
+# ========================================================================
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build & Distribution
+dist/
+frontend/dist/
+dist-ssr/
+build/
+*.egg-info/
+*.egg
+
+# Python Cache & Bytecode
+__pycache__/
+backend/__pycache__/
+backend/**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.env
+*.local
+
+# Testing & Linting Artifacts
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Runtime Database & Dynamic Test Uploads
+backend/data/evidence_system.db
+backend/data/evidence_system.db-journal
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/reports/*
+!backend/data/reports/.gitkeep
+backend/data/fresh_test_*
+backend/data/test_*
+backend/data/*.json
+!backend/data/sources/source_registry.json
+!backend/data/demo/**
+*.log
+
+# Generated Audit Logs (Keep README.md & DEMO_GUIDE.md, exclude transient logs)
+COMPLETE_PROJECT_MASTER_REPORT.md
+EVALUATION_RESULTS.md
+FINAL_FRESH_E2E_VALIDATION.md
+FINAL_HACKATHON_READINESS_REPORT.md
+FINAL_PROJECT_REPORT.md
+HACKATHON_READINESS.md
+JUDGE_QA.md
+KNOWN_LIMITATIONS.md
+PROJECT_STATUS.md
+PROJECT_SUBMISSION_REPORT.html

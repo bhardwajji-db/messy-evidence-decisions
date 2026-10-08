@@ -1,0 +1,50 @@
+{
+  "case_id": "DEMO-004",
+  "title": "Road Damage Corroboration \u2014 North Arterial Corridor",
+  "category": "Road / Infrastructure",
+  "location": "North Arterial Road, Sector 12",
+  "reporter": "Multi-Witness Civic Corroboration Cell",
+  "summary": "Multiple independent citizen complaints (photo + voice + text) corroborating severe potholes without an existing official work order.",
+  "data_origin": "derived",
+  "expected": {
+    "decision": "PARTIALLY VERIFIED",
+    "severity": "MEDIUM",
+    "recommended_action": "Field verification and work order generation required",
+    "relationship_type": "CORROBORATES"
+  },
+  "evidence_items": [
+    {
+      "id": "EV-D4-001-PHOTO",
+      "source_type": "IMAGE",
+      "filename": "north_arterial_pothole_cluster.jpg",
+      "file_path": "data/demo/images/north_arterial_pothole_cluster.jpg",
+      "sha256": "da2deed7accd57da51ea46b2f412944038a0f34dc9a946807296a1309462e56d",
+      "location": "North Arterial Road, Sector 12",
+      "uploader": "Citizen Mobile App",
+      "data_origin": "derived",
+      "description": "Ground photo of active pothole cluster on North Arterial Road."
+    },
+    {
+      "id": "EV-D4-002-VOICE",
+      "source_type": "AUDIO",
+      "filename": "north_arterial_voice_report.wav",
+      "file_path": "data/demo/audio/north_arterial_voice_report.wav",
+      "sha256": "cec435009dd9fcfb9ddc2a12c57137e0126f05f544b81118877d5d24f1f098bf",
+      "location": "North Arterial Road",
+      "uploader": "Municipal Helpline 1916",
+      "data_origin": "synthetic",
+      "description": "Helpline dispatch call reporting severe pothole section causing traffic congestion."
+    },
+    {
+      "id": "EV-D4-003-TEXT",
+      "source_type": "TEXT",
+      "filename": "north_arterial_ward_report.txt",
+      "file_path": "data/demo/complaints/north_arterial_ward_report.txt",
+      "sha256": "76195a1e5df813eeba5d3ea79645f04f615c3dc514f65f87e9b34d8fd7b5bac7",
+      "location": "North Arterial Road, Sector 12",
+      "uploader": "Ward Councillor Inspection Request",
+      "data_origin": "derived",
+      "description": "Councillor report confirming damage and noting absence of prior work orders."
+    }
+  ]
+}

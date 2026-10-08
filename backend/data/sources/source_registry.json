@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "registry_name": "Municipal Inspection Verification Demo Sources Registry",
+  "version": "1.0.0",
+  "description": "Catalog of public, derived, and synthetic data sources used to calibrate and demonstrate multimodal evidence fusion for municipal road repair verification.",
+  "provenance_policy": "All data sources are strictly categorized by data_origin ('public', 'derived', or 'synthetic'). No synthetic record is misrepresented as an authentic government voucher.",
+  "sources": [
+    {
+      "source_id": "SRC-RDD2020",
+      "source_name": "Road Damage Dataset 2020 (RDD2020 / Crowdsensing Road Damage)",
+      "publisher": "Sekilab / University of Tokyo (Arya, D., Maeda, H., Ghosh, S. K., Toshniwal, D., Mraz, A., Kashiyama, T., & Sekimoto, Y.)",
+      "source_url": "https://github.com/sekilab/RoadDamageDetector",
+      "citation": "Arya et al., 'Transfer Learning-based Road Damage Detection using High-Resolution Smartphone Images', IEEE BigData 2020 / Mendeley Data, doi:10.17632/5ty2wb6gvg.1",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modality": "IMAGE",
+      "format": "JPEG / VOC XML Annotations",
+      "data_origin": "public",
+      "domain": "Pothole detection, road cavity analysis, longitudinal cracks, alligator cracking",
+      "usage_in_project": "Reference visual features, crack geometry, cavity dimensions (depth/diameter benchmarks), and roughness statistics used by the OpenCV Computer Vision pipeline."
+    },
+    {
+      "source_id": "SRC-BBMP-FMS",
+      "source_name": "Bruhat Bengaluru Mahanagara Palike (BBMP) Fix My Street Civic Grievance Dataset",
+      "publisher": "OpenCity.in / Urban Informatics Lab & BBMP",
+      "source_url": "https://data.opencity.in/dataset/bbmp-fix-my-street",
+      "license": "Open Data Commons Open Database License (ODbL) / CC BY 4.0",
+      "license_url": "https://opendatacommons.org/licenses/odbl/",
+      "modality": "TEXT / TABULAR",
+      "format": "CSV / GeoJSON",
+      "data_origin": "derived",
+      "domain": "Municipal citizen grievance records, road defect complaints, ward designations, administrative resolution states",
+      "usage_in_project": "Complaint phrasing, citizen vocabulary ('huge dangerous pothole', 'bike accidents', 'no work done'), complaint ticket IDs, and ward naming conventions."
+    },
+    {
+      "source_id": "SRC-CPPP-PWD",
+      "source_name": "Central Public Procurement Portal (CPPP) & Public Works Department (PWD) Works Completion Records",
+      "publisher": "National Informatics Centre (NIC) / Ministry of Housing & Urban Affairs (MoHUA), Government of India",
+      "source_url": "https://eprocure.gov.in/eprocure/app",
+      "license": "Government Open Data License - India (GODL) / Public Records",
+      "license_url": "https://data.gov.in/sites/default/files/Gazette_Notification_OGDL.pdf",
+      "modality": "PDF / DOCUMENT",
+      "format": "PDF Work Orders / Completion Certificates",
+      "data_origin": "derived",
+      "domain": "Municipal contractor work completion certificates, engineer inspection sign-offs, defect liability clauses, work order identifiers",
+      "usage_in_project": "Schema and structural layout for official PDF vouchers (e.g. Work Order IDs, Executive Engineer stamps, contractor names, completion statements, certification dates)."
+    },
+    {
+      "source_id": "SRC-SYNTH-AUDIO",
+      "source_name": "Multimodal Acoustic Helpline Simulation Engine",
+      "publisher": "Messy Evidence Decisions Research Project",
+      "source_url": "local://backend/app/services/demo_generator.py",
+      "license": "MIT License (Project Open Source)",
+      "modality": "AUDIO",
+      "format": "WAV (16kHz Mono 16-bit PCM)",
+      "data_origin": "synthetic",
+      "domain": "Citizen IVR helpline voice complaints with harmonic pitch simulation and synchronized transcripts",
+      "usage_in_project": "Simulates citizen voice calls reporting ongoing road damage with timestamps, persistence cues, and location tags, processed by faster-whisper STT."
+    },
+    {
+      "source_id": "SRC-SYNTH-VISION",
+      "source_name": "Deterministic Asphalt Surface & Defect Texture Synthesizer",
+      "publisher": "Messy Evidence Decisions Research Project",
+      "source_url": "local://backend/app/services/demo_generator.py",
+      "license": "MIT License (Project Open Source)",
+      "modality": "IMAGE",
+      "format": "JPEG (800x600)",
+      "data_origin": "synthetic",
+      "domain": "Ground-truth road surface images featuring calibrated pothole cavities (45cm depth, high roughness) vs smooth resurfaced Grade-1 bitumen",
+      "usage_in_project": "Enables 100% offline, deterministic OpenCV edge and contour extraction with ground-truth verification and OCR stencils."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "case_id": "DEMO-001",
+  "title": "Road Repair Verification \u2014 Gate 2 (Winning Hero Demo)",
+  "category": "Road / Infrastructure",
+  "location": "Gate 2 Road, North Sector",
+  "reporter": "Citizen Grievance Cell & Ward Auditor",
+  "summary": "Official completion order WO-8812 marked COMPLETED vs photographic cavity proof, citizen voice grievance, and text note.",
+  "data_origin": "derived",
+  "expected": {
+    "decision": "CONFLICT",
+    "severity": "HIGH",
+    "recommended_action": "Physical field inspection required",
+    "relationship_type": "CONTRADICTS"
+  },
+  "evidence_items": [
+    {
+      "id": "EV-D1-001-PHOTO",
+      "source_type": "IMAGE",
+      "filename": "gate2_pothole_cavity.jpg",
+      "file_path": "data/demo/images/gate2_pothole_cavity.jpg",
+      "sha256": "602314aa318f119247ac974de7f616ede66bfd02310694dee12f1186f857f3fb",
+      "location": "Gate 2 Road, North Sector",
+      "uploader": "Citizen Mobile App",
+      "data_origin": "derived",
+      "description": "Photographic inspection showing 45cm deep cavity on Gate 2 corridor."
+    },
+    {
+      "id": "EV-D1-002-PDF",
+      "source_type": "PDF",
+      "filename": "WO_2026_8812_Gate2_Completion.pdf",
+      "file_path": "data/demo/official_records/WO_2026_8812_Gate2_Completion.pdf",
+      "sha256": "b56a74035450584abca142877859ece533fd0f906eb75b3c6e97e098880fba84",
+      "location": "Gate 2 Road, North Sector",
+      "uploader": "Public Works Dept Portal",
+      "data_origin": "derived",
+      "description": "Official completion order WO-2026-8812 claiming repair was executed and certified."
+    },
+    {
+      "id": "EV-D1-003-VOICE",
+      "source_type": "AUDIO",
+      "filename": "gate2_citizen_audio_complaint.wav",
+      "file_path": "data/demo/audio/gate2_citizen_audio_complaint.wav",
+      "sha256": "cec435009dd9fcfb9ddc2a12c57137e0126f05f544b81118877d5d24f1f098bf",
+      "location": "Gate 2 Road",
+      "uploader": "Municipal Helpline 1916",
+      "data_origin": "synthetic",
+      "description": "Citizen IVR audio testimony reporting persistent pothole unbroken for 2 months."
+    },
+    {
+      "id": "EV-D1-004-TEXT",
+      "source_type": "TEXT",
+      "filename": "gate2_citizen_text_grievance.txt",
+      "file_path": "data/demo/complaints/gate2_citizen_text_grievance.txt",
+      "sha256": "68f03683671aafd0a15e40d913ca7a2eaf4bdfbb71c53e56d349e85579f1509f",
+      "location": "Gate 2 Road near North Sector roundabout",
+      "uploader": "Ward Supervisor Log",
+      "data_origin": "derived",
+      "description": "Citizen grievance CG-9921 demanding physical inspection."
+    }
+  ]
+}
