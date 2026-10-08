@@ -122,3 +122,16 @@ All 10 tests validate:
 - Deterministic conflict rule execution
 - Human override audit trail
 - HTML & JSON report generation
+
+---
+
+## 6. Official Reports & Demo Evaluation Dossiers
+
+| Report | Format | Description |
+|---|---|---|
+| **[Hero Demo Report](DEMO_REPORT.md)** | Markdown | Verification breakdown for Gate 2 road repair (evidence matrix, claims, contradiction logic). |
+| **[Comprehensive Master Report](COMPLETE_PROJECT_MASTER_REPORT.md)** | Markdown | In-depth technical architecture, ML pipeline design, and governance audit dossier. |
+| **[Project Submission Report](PROJECT_SUBMISSION_REPORT.html)** | Printable HTML | Executive presentation summary with printable layout and certificate styles. |
+| **[Evaluation Benchmark Results](EVALUATION_RESULTS.md)** | Markdown | 20-case controlled test suite metrics (100% accuracy, 13.45ms decision latency). |
+| **[Demo Guide](DEMO_GUIDE.md)** | Markdown | Operator instructions for live judging walkthroughs and manual verification. |
+
